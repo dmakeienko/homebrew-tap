@@ -5,21 +5,21 @@
 class Tfenvgo < Formula
   desc "Terraform version manager written in Go"
   homepage "https://github.com/dmakeienko/tfenvgo"
-  version "2.0.1"
+  version "2.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dmakeienko/tfenvgo/releases/download/v2.0.1/tfenvgo_2.0.1_darwin_amd64.tar.gz"
-      sha256 "40bbc1c860af9f67edb8a241c861e4bc184fda98fb934d5b884cd68d20a6ca86"
+      url "https://github.com/dmakeienko/tfenvgo/releases/download/v2.0.2/tfenvgo_2.0.2_darwin_amd64.tar.gz"
+      sha256 "1055bdc781df3bd14cd3865cf8da6ac408c51bcaafec5c74f38ab250ef2e9594"
 
       define_method(:install) do
         bin.install "tfenvgo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dmakeienko/tfenvgo/releases/download/v2.0.1/tfenvgo_2.0.1_darwin_arm64.tar.gz"
-      sha256 "89307d7358d881a652c0174d480955284d04e26c58fb668242427c823061d080"
+      url "https://github.com/dmakeienko/tfenvgo/releases/download/v2.0.2/tfenvgo_2.0.2_darwin_arm64.tar.gz"
+      sha256 "373f1acde45c682090d9eecf9e2ca97a0a04b0b95a99c79b5320af167675f932"
 
       define_method(:install) do
         bin.install "tfenvgo"
@@ -29,15 +29,15 @@ class Tfenvgo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dmakeienko/tfenvgo/releases/download/v2.0.1/tfenvgo_2.0.1_linux_amd64.tar.gz"
-      sha256 "eb9968417b8f107635385db34a5e24f26fdda59c2e7fdf93bfcf5d8d7fbc8cc1"
+      url "https://github.com/dmakeienko/tfenvgo/releases/download/v2.0.2/tfenvgo_2.0.2_linux_amd64.tar.gz"
+      sha256 "82bf794862905c5b9d252b4e3be150bf765d1f8bdc76afa0dfa61111f46a2668"
       define_method(:install) do
         bin.install "tfenvgo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dmakeienko/tfenvgo/releases/download/v2.0.1/tfenvgo_2.0.1_linux_arm64.tar.gz"
-      sha256 "0cbe8f91339227ca678b376a1d30f5d7bad69977e5d20ee5467150d6165af711"
+      url "https://github.com/dmakeienko/tfenvgo/releases/download/v2.0.2/tfenvgo_2.0.2_linux_arm64.tar.gz"
+      sha256 "e8fa9212bb61cf9d396428fd4d5fe67b540e50143bd556182f9adb3c0bc7f3d0"
       define_method(:install) do
         bin.install "tfenvgo"
       end
